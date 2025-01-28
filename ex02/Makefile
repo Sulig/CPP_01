@@ -6,7 +6,7 @@
 #    By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 17:01:41 by sadoming          #+#    #+#              #
-#    Updated: 2025/01/28 17:48:19 by sadoming         ###   ########.fr        #
+#    Updated: 2025/01/28 18:22:31 by sadoming         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ val-strict: $(NAME)
 # **************************************************************************** #
 # Clean region
 clean:
-	@/bin/rm -frd $(OBJ_DIR)
+	@/bin/rm -frd $(OBJ)
 	@echo "$(B)\n All objs & deps removed$(DEF)\n"
 
 fclean:	clean
