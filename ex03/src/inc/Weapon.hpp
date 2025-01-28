@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 18:06:33 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/28 18:20:03 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/01/28 20:06:25 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class Weapon
 {
 	public:
+		Weapon(void);
 		Weapon(std::string type);
 		~Weapon();
 		const std::string	&getType();

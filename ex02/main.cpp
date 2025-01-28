@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 17:39:46 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/28 17:49:41 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/01/28 19:18:33 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,11 @@
 /* PTR && REF */
 /** Both are used to store the address of another variable.
 *	- PTR: Pointer is a variable that stores the memory address as its value.
+*		* It is a variable that stores the address of another variable.
+*		* You can reassign the pointer to another variable.
 *	- REF: Reference is a variable that refers to another variable.
+*		* It is an alias for another variable.
+*		* You cannot reassign the reference to another variable.
 */
 int	main()
 {
