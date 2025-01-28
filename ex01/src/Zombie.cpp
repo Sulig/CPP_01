@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 16:38:41 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/27 19:55:42 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/01/28 17:29:18 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,11 @@ Zombie::~Zombie(void)
 	return ;
 }
 /*	## Init and Destroy END ##	*/
+
+void	Zombie::setName(std::string name)
+{
+	_name = name;
+}
 
 void	Zombie::announce()
 {
