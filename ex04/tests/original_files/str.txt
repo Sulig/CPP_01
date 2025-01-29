@@ -1,0 +1,41 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    str.txt                                            :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/01/29 19:17:22 by sadoming          #+#    #+#              #
+#    Updated: 2025/01/29 19:21:40 by sadoming         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+//* Search "txt" and replace to "xpm"
+
+
+
+
+txt
+
++89452xtxtxtxtxtxtxtxtxtxtxtxtx64567890
+
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+
+
+txt
+
+xtxtxtxtxtxtxtxt01234xtxstxt3356xtxtxtgj
+zdfruy6ryhe42xtx245678uytfdxtxt12356576
+dfghjktxt
+56787      txt  t333   xtxt 553
+txt
