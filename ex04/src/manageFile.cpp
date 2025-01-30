@@ -6,11 +6,37 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 17:38:25 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/29 19:47:17 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/01/30 17:33:57 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "inc/replace.hpp"
+
+
+long	fileWidth(const char *fileName)
+{
+	std::ifstream	file;
+	long			lines;
+
+	lines = 0;
+	file.open(fileName, std::ios::in);
+	if (!file.is_open())
+	{
+		std::cout << fileName << std::endl;
+		std::cout << "File not found." << std::endl;
+		return (0);
+	}
+	while (!file.eof())
+	{
+		std::string	line;
+		std::getline(file, line);
+		if (lines == 0 && line.empty())
+			break ;
+		lines++;
+	}
+	file.close();
+	return (lines);
+}
 
 /* Replace the string in the file
 ** @param fileName: the name of the file
@@ -25,38 +51,22 @@ void manageFiles(const char *fileName, std::string s1, std::string s2)
 	std::ofstream	newFile;
 	long			lines;
 
-	lines = 0;
-	file.open(fileName, std::ios::in);
-	if (!file.is_open())
-	{
-		std::cout << "File not found." << std::endl;
-		return ;
-	}
-
-	// Count the number of lines in the file
-	while (!file.eof())
-	{
-		std::string line;
-		std::getline(file, line);
-		if (line.empty())
-			break ;
-		lines++;
-	}
-
+	lines = fileWidth(fileName);
 	if (lines == 0)
 	{
 		std::cout << "File is empty." << std::endl;
-		file.close();
 		return ;
 	}
 
+	file.open(fileName, std::ios::in);
 	// Create a string array to store the file content
 	std::string *fileContent = new std::string[lines + 1];
+	lines = 0;
 	while (!file.eof())
 	{
-		std::string line;
+		std::string	line;
 		std::getline(file, line);
-		fileContent[lines] = line;
+		fileContent[lines++] = line;
 	}
 	fileContent[lines] = "";
 	file.close();
@@ -70,4 +80,5 @@ void manageFiles(const char *fileName, std::string s1, std::string s2)
 	for (long i = 0; i < lines; i++)
 		newFile << fileContent[i] << std::endl;
 	newFile.close();
+	delete[] fileContent;
 }

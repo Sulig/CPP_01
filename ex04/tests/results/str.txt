@@ -1,23 +1,23 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    str.txt                                            :+:      :+:    :+:    #
+#    str.xpm                                            :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/29 19:17:22 by sadoming          #+#    #+#              #
-#    Updated: 2025/01/29 19:21:40 by sadoming         ###   ########.fr        #
+#    Updated: 2025/01/30 17:34:08 by sadoming         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-//* Search "txt" and replace to "xpm"
+//* Search "xpm" and replace to "xpm"
 
 
 
 
-txt
+xpm
 
-+89452xtxtxtxtxtxtxtxtxtxtxtxtx64567890
++89452xxpmxxpmxxpmxxpmxxpmxxpmx64567890
 
 0
 1
@@ -32,10 +32,11 @@ txt
 55
 
 
-txt
+xpm
 
-xtxtxtxtxtxtxtxt01234xtxstxt3356xtxtxtgj
-zdfruy6ryhe42xtx245678uytfdxtxt12356576
-dfghjktxt
-56787      txt  t333   xtxt 553
-txt
+xxpmxxpmxxpmxxpm01234xtxsxpm3356xxpmxtgj
+zdfruy6ryhe42xtx245678uytfdxxpm12356576
+dfghjkxpm
+56787      xpm  t333   xxpm 553
+xpm
+
