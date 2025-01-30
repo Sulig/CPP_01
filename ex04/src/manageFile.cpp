@@ -6,12 +6,11 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 17:38:25 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/30 17:33:57 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/01/30 18:38:42 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "inc/replace.hpp"
-
 
 long	fileWidth(const char *fileName)
 {
@@ -73,12 +72,20 @@ void manageFiles(const char *fileName, std::string s1, std::string s2)
 
 	// Replace the string in the array
 	for (long i = 0; i < lines; i++)
+	{
+		if (fileContent[i].empty())
+			continue ;
 		fileContent[i] = strreplace(fileContent[i], s1, s2);
+	}
 
 	// Write the new content to the file
 	newFile.open(fileName, std::ios::out);
 	for (long i = 0; i < lines; i++)
-		newFile << fileContent[i] << std::endl;
+	{
+		newFile << fileContent[i];
+		if (i < lines - 1)
+			newFile << std::endl;
+	}
 	newFile.close();
 	delete[] fileContent;
 }
