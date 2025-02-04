@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 17:39:46 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/28 19:18:33 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:39:49 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	main()
 	std::string &stringREF = str;
 
 	std::cout << "Address of the string:\t\t" << &str << std::endl;
+	std::cout << "Address of PTR:		\t" << &stringPTR << std::endl;
 	std::cout << "Address of the string PTR:\t" << stringPTR << std::endl;
 	std::cout << "Address of the string REF:\t" << &stringREF << std::endl;
 	std::cout << "Accesing String itself:\t\t" << str << std::endl;

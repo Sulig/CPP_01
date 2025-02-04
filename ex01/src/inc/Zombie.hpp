@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 16:39:01 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/28 17:29:05 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:56:24 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ class	Zombie
 
 void	randomChump(std::string name);
 Zombie	*newZombie(std::string name);
-Zombie	*zombieHorde(long n, std::string name);
+Zombie	*zombieHorde(unsigned long long n, std::string name);
 
 #endif

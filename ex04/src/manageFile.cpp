@@ -6,7 +6,7 @@
 /*   By: sadoming <sadoming@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 17:38:25 by sadoming          #+#    #+#             */
-/*   Updated: 2025/01/30 18:38:42 by sadoming         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:28:23 by sadoming         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ long	fileWidth(const char *fileName)
 void manageFiles(const char *fileName, std::string s1, std::string s2)
 {
 	std::ifstream	file;
-	std::ofstream	newFile;
 	long			lines;
 
 	lines = fileWidth(fileName);
@@ -78,8 +77,11 @@ void manageFiles(const char *fileName, std::string s1, std::string s2)
 		fileContent[i] = strreplace(fileContent[i], s1, s2);
 	}
 
-	// Write the new content to the file
-	newFile.open(fileName, std::ios::out);
+	// Write the new content to a new file
+	std::ofstream	newFile;
+	std::string		extension = ".replace";
+	std::string		result = fileName + extension;
+	newFile.open(result.c_str(), std::ios::out);
 	for (long i = 0; i < lines; i++)
 	{
 		newFile << fileContent[i];
